@@ -34,7 +34,7 @@ while play == True:
   elif(result == "Server"):
     scoreServer += 1
 
-  print("Client: " + str(clientNumber) + " x Server: " + str(serverNumber) + " -- Winner: " + str(result))
+  print("Client (" + str(clientParity) + "): " + str(clientNumber) + " x Server: " + str(serverNumber) + " -- Winner: " + str(result))
 
   play = input("Do you want to play again? (y/n): ")
   sock.sendall(bytes(play, 'utf8'))

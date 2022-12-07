@@ -35,7 +35,7 @@ while True:
   elif(result == "Server"):
     scoreServer += 1
 
-  print("Client: " + str(clientNumber) + " x Server: " + str(serverNumber) + " -- Winner: " + str(result))
+  print("Client (" + str(clientParity) + "): " + str(clientNumber) + " x Server: " + str(serverNumber) + " -- Winner: " + str(result))
 
   data = conn.recv(1024)
   play = data.decode('utf8')
